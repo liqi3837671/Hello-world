@@ -1,0 +1,1110 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     44526,       1102]
+NotebookOptionsPosition[     40234,       1028]
+NotebookOutlinePosition[     40606,       1044]
+CellTagsIndexPosition[     40563,       1041]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+  "\:547d\:4ee4\:63d0\:793a\:7b26", "\:ff0c", 
+   "\:63d0\:793a\:662f\:4e00\:9636\:8fd8\:662f\:4e8c\:9636\:62df\:5408\:66f2\
+\:7ebf"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.858926790299714*^9, 
+  3.8589268136348658`*^9}},ExpressionUUID->"dd4eae97-bf86-4fd4-a6d2-\
+9da8c97eb29f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"if", "-", "else\:7ed3\:6784"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", "\:8f93\:5165\:53c2\:6570", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.8589268716605473`*^9, 
+  3.8589269364423866`*^9}},ExpressionUUID->"679f3648-138a-452a-96f4-\
+05621b44cbb4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Input", "[", "\"\<\:8bf7\:8f93\:5165\:6570\:636e\:ff1a\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8589272279552608`*^9, 3.85892723924842*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"af913f10-b84d-4ca8-8b29-6c1c08030aea"],
+
+Cell[BoxData["$Canceled"], "Output",
+ CellChangeTimes->{3.8589272570406537`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"402d0514-714e-4108-8438-8e84e891da4e"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", "\:521b\:5efa\:4e00\:4e2a\:65b0\:5355\:9875", "*)"}]], "Input",
+ CellChangeTimes->{{3.8589300868356524`*^9, 
+  3.858930096900102*^9}},ExpressionUUID->"d8df4edc-a39e-4565-834c-\
+98e4bab58332"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+  "\:52a0\:6807\:7b7e", "\:ff0c", "\:8d4b\:503c", "\:ff0c", 
+   "\:81f3\:5c112\:4e2a\:9009\:9879"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.858928284923298*^9, 
+  3.858928320696308*^9}},ExpressionUUID->"ab80d8a7-4e01-464a-8c2d-\
+f735bcbd9b23"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<\:5206\:6790\:66f2\:7ebf\:9636\:6570\:ff1a\>\"", ",", 
+       "\"\<\:6821\:51c6\:70b9\:6570\:76ee\:ff1a\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"PopupMenu", "[", 
+        RowBox[{
+         RowBox[{"Dynamic", "[", "polyorder", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2"}], "}"}], ",", 
+         RowBox[{"FieldSize", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"6", ",", "1"}], "}"}]}]}], "]"}], ",", 
+       RowBox[{"InputField", "[", 
+        RowBox[{
+         RowBox[{"Dynamic", "[", "pts", "]"}], ",", "Number", ",", 
+         RowBox[{"FieldSize", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"6", ",", "1.4"}], "}"}]}]}], "]"}]}], "}"}]}], "}"}], ",", 
+   RowBox[{"Frame", "->", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.858927892014353*^9, 3.858927943665958*^9}, {
+  3.858928066544858*^9, 3.858928073591774*^9}, {3.858928108626273*^9, 
+  3.8589281560324507`*^9}, {3.858928365687765*^9, 3.8589284380441494`*^9}, {
+  3.858928820705263*^9, 3.8589289101528993`*^9}, {3.858928992981579*^9, 
+  3.858929022394895*^9}, {3.8589290525176477`*^9, 3.8589290865879397`*^9}, {
+  3.858929248746755*^9, 3.8589292563787093`*^9}, {3.8589293288959227`*^9, 
+  3.8589293338635054`*^9}, {3.8589294220380554`*^9, 3.8589294706789193`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"ac225170-382c-480d-a647-5bcc3cc7977b"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\:5206\:6790\:66f2\:7ebf\:9636\:6570\:ff1a\"\>", "\<\"\:6821\:51c6\
+\:70b9\:6570\:76ee\:ff1a\"\>"},
+    {
+     PopupMenuBox[Dynamic[$CellContext`polyorder], {1->"1", 2->"2"},
+      FieldSize->{6, 1}], 
+     InputFieldBox[Dynamic[$CellContext`pts], Number,
+      FieldSize->{6, 1.4}]}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.8589730171751904`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"4e3f2547-ec14-412a-8c28-6678fce48928"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<Notation`\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Symbolize", "[", 
+  RowBox[{"ParsedBoxWrapper", "[", 
+   RowBox[{"SubscriptBox", "[", 
+    RowBox[{"\"\<_\>\"", ",", "\"\<_\>\""}], "]"}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.858933560673149*^9, 3.8589336382752495`*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"9a684249-4eeb-4c6f-b642-102a12a7d69d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"if", "-", "else\:7ed3\:6784"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"G", "[", "y_", "]"}], ":=", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"1", "==", "polyorder"}], ",", 
+      RowBox[{
+       SubscriptBox["b", "0"], "+", 
+       RowBox[{
+        SubscriptBox["b", "1"], "y"}]}], ",", 
+      RowBox[{
+       SubscriptBox["b", "0"], "+", 
+       RowBox[{
+        SubscriptBox["b", "1"], "y"}], "+", 
+       RowBox[{
+        SubscriptBox["b", "2"], 
+        SuperscriptBox["y", "2"]}]}]}], "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "\:751f\:6210\:76f8\:5e94\:8868\:683c", "\:ff0c", 
+     "\:8ba9\:4f7f\:7528\:8005\:8f93\:5165\:6570\:636e"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "\:5982\:679c\:5927\:4e8e15\:4e2a\:6570", "\:ff0c", 
+     "\:5219\:663e\:793a\:6570\:636e\:5927\:591a\:9519\:8bef"}], 
+    "*)"}]}]}]], "Input",
+ CellChangeTimes->{{3.858929534707308*^9, 3.8589295587129374`*^9}, {
+   3.8589327139246197`*^9, 3.858932936974349*^9}, {3.8589336511927657`*^9, 
+   3.8589336518957047`*^9}, {3.858933688818718*^9, 3.858933698113188*^9}, 
+   3.8589726654043665`*^9},
+ CellLabel->"In[2]:=",ExpressionUUID->"f0d1fcb1-7a34-4fde-b400-1c70f1d27903"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<\!\(\*SubscriptBox[\(x\), \(i\)]\)\>\"", ",", 
+       "\"\<u(\!\(\*SubscriptBox[\(x\), \(i\)]\))\>\"", ",", 
+       "\"\<\!\(\*SubscriptBox[\(y\), \(i\)]\)\>\"", ",", 
+       "\"\<u(\!\(\*SubscriptBox[\(y\), \(i\)]\))\>\""}], "}"}], ",", 
+     RowBox[{"Grid", "[", 
+      RowBox[{
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"InputField", "[", 
+          RowBox[{
+           RowBox[{"Dynamic", "[", 
+            RowBox[{"Evaluate", "@", 
+             RowBox[{"Subscript", "[", 
+              RowBox[{"a", ",", "i", ",", "j"}], "]"}]}], "]"}], ",", 
+           "Number", ",", 
+           RowBox[{"FieldSize", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"6", ",", "1.4"}], "}"}]}]}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "1", ",", "pts"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"j", ",", "1", ",", "4"}], "}"}]}], "]"}], ",", 
+       RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.858933034694273*^9, {3.8589332201855173`*^9, 3.8589332289212575`*^9}, {
+   3.8589337876887712`*^9, 3.8589337879230547`*^9}, {3.858933821209594*^9, 
+   3.8589338295513783`*^9}, {3.858933927554513*^9, 3.8589340079251013`*^9}, {
+   3.8589340842119875`*^9, 3.858934141736597*^9}, {3.8589341822142105`*^9, 
+   3.85893418537358*^9}, 3.8589342533652344`*^9, {3.85893436115593*^9, 
+   3.8589344523532577`*^9}, {3.858934509572914*^9, 3.858934514883956*^9}, {
+   3.8589345609529*^9, 3.858934608399294*^9}, {3.858934767807459*^9, 
+   3.858934771993935*^9}, {3.8589350874148817`*^9, 3.8589350902683764`*^9}, {
+   3.8589352591069784`*^9, 3.858935261044019*^9}, {3.8589353173732624`*^9, 
+   3.858935335882042*^9}, {3.858935391047552*^9, 3.8589353973114634`*^9}, {
+   3.8589355190650887`*^9, 3.858935546808431*^9}, 3.8589355824826546`*^9, {
+   3.858935628644428*^9, 3.858935651934802*^9}, 3.8589375230123825`*^9},
+ CellLabel->"In[49]:=",ExpressionUUID->"1a4b0feb-2f64-4dee-b08c-81a39b7eb46b"],
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"\\!\\(\\*SubscriptBox[\\(x\\), \\(i\\)]\\)\"\>", 
+       ",", "\<\"u(\\!\\(\\*SubscriptBox[\\(x\\), \\(i\\)]\\))\"\>", 
+       ",", "\<\"\\!\\(\\*SubscriptBox[\\(y\\), \\(i\\)]\\)\"\>", 
+       ",", "\<\"u(\\!\\(\\*SubscriptBox[\\(y\\), \\(i\\)]\\))\"\>"}], "}"}], 
+     ",", 
+     TagBox[GridBox[{
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 1, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 1, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 1, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 1, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 2, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 2, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 2, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 2, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 3, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 3, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 3, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 3, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 4, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 4, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 4, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 4, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 5, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 5, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 5, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 5, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 6, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 6, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 6, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 6, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 7, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 7, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 7, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 7, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 8, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 8, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 8, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 8, 4]], Number,
+          FieldSize->{6, 1.4}]}
+       },
+       AutoDelete->False,
+       GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Grid"]}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.8589339910150566`*^9, 3.8589340098465004`*^9}, {
+   3.8589340875833426`*^9, 3.8589341104541807`*^9}, 3.858934144751631*^9, 
+   3.858934188116932*^9, 3.8589346284529696`*^9, 3.8589350952754316`*^9, 
+   3.858935339226576*^9, 3.8589354035756073`*^9, 3.858935531513067*^9, 
+   3.858935603710932*^9, {3.858935639625862*^9, 3.85893565560581*^9}},
+ CellLabel->"Out[49]=",ExpressionUUID->"df119a4b-3bc8-4fb2-8fb4-e9e267cd79a8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<     \!\(\*SubscriptBox[\(x\), \(\(i\)\(\\\ \\\ \\\ \\\ \\\ \\\
+\ \\\ \\\ \\\ \\\ \\\ \\\ \\\ \)\)]\)\>\"", ",", 
+           "\"\<     u(\!\(\*SubscriptBox[\(x\), \(i\)]\))   \>\"", ",", 
+           "\"\<     \!\(\*SubscriptBox[\(y\), \(i\)]\)     \>\"", ",", 
+           "\"\<   u(\!\(\*SubscriptBox[\(y\), \(i\)]\))   \>\""}], "}"}], 
+         "}"}], ",", 
+        RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"InputField", "[", 
+           RowBox[{
+            RowBox[{"Dynamic", "[", 
+             RowBox[{"Evaluate", "@", 
+              RowBox[{"Subscript", "[", 
+               RowBox[{"a", ",", "i", ",", "j"}], "]"}]}], "]"}], ",", 
+            "Number", ",", 
+            RowBox[{"FieldSize", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{"6", ",", "1.4"}], "}"}]}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", "1", ",", "pts"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"j", ",", "1", ",", "4"}], "}"}]}], "]"}], ",", 
+        RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}], "}"}]}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8589356896999693`*^9, 3.8589357041513023`*^9}, {
+  3.858935823332365*^9, 3.8589358658686943`*^9}, {3.8589360465172553`*^9, 
+  3.8589361812229433`*^9}, {3.8589363713714585`*^9, 3.8589366114249697`*^9}, {
+  3.858972720063218*^9, 3.8589727474669065`*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"2310f1c6-5dcd-4e9b-98b1-85db50202a61"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     TagBox[GridBox[{
+        {"\<\"     \\!\\(\\*SubscriptBox[\\(x\\), \\(\\(i\\)\\(\\\\ \\\\ \\\\ \
+\\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\)\\)]\\)\"\>", "\<\"     \
+u(\\!\\(\\*SubscriptBox[\\(x\\), \\(i\\)]\\))   \"\>", "\<\"     \
+\\!\\(\\*SubscriptBox[\\(y\\), \\(i\\)]\\)     \"\>", "\<\"   \
+u(\\!\\(\\*SubscriptBox[\\(y\\), \\(i\\)]\\))   \"\>"}
+       },
+       AutoDelete->False,
+       GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Grid"]},
+    {
+     TagBox[GridBox[{
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 1, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 1, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 1, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 1, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 2, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 2, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 2, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 2, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 3, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 3, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 3, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 3, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 4, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 4, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 4, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 4, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 5, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 5, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 5, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 5, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 6, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 6, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 6, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 6, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 7, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 7, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 7, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 7, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 8, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 8, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 8, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 8, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 9, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 9, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 9, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 9, 4]], Number,
+          FieldSize->{6, 1.4}]},
+        {
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 10, 1]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 10, 2]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 10, 3]], Number,
+          FieldSize->{6, 1.4}], 
+         InputFieldBox[Dynamic[
+           Subscript[$CellContext`a, 10, 4]], Number,
+          FieldSize->{6, 1.4}]}
+       },
+       AutoDelete->False,
+       GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Grid"]}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  3.8589357084158688`*^9, {3.8589358295466447`*^9, 3.8589358669463925`*^9}, {
+   3.858936058770527*^9, 3.858936079865116*^9}, 3.8589361137027254`*^9, {
+   3.8589361486250896`*^9, 3.858936184253477*^9}, 3.8589363815905657`*^9, {
+   3.8589364142513175`*^9, 3.8589364271638203`*^9}, {3.8589364830941677`*^9, 
+   3.858936613648903*^9}, 3.8589367745841312`*^9, {3.858972711997566*^9, 
+   3.858972750240485*^9}},
+ CellLabel->"Out[8]=",ExpressionUUID->"c859821b-222f-4d2a-aea9-bafc80c67d2b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ SubscriptBox["a", "14"]], "Input",
+ CellChangeTimes->{{3.8589367311294556`*^9, 3.8589367895618267`*^9}},
+ CellLabel->"In[79]:=",ExpressionUUID->"762e8f6b-ccd2-43c7-9cd1-1f15eb78af3e"],
+
+Cell[BoxData[
+ SubscriptBox["a", "14"]], "Output",
+ CellChangeTimes->{{3.8589367364928017`*^9, 3.8589367537000895`*^9}, {
+  3.858936783719142*^9, 3.85893679132699*^9}},
+ CellLabel->"Out[79]=",ExpressionUUID->"0f3c1977-b9a4-4ea4-800c-6ce0da3e8f39"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<\!\(\*SubscriptBox[\(x\), \(i\)]\)\>\"", ",", 
+      "\"\<u(\!\(\*SubscriptBox[\(x\), \(i\)]\))\>\"", ",", 
+      "\"\<\!\(\*SubscriptBox[\(y\), \(i\)]\)\>\"", ",", 
+      "\"\<u(\!\(\*SubscriptBox[\(y\), \(i\)]\))\>\""}], "}"}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.858935805594822*^9, 3.8589358099529963`*^9}},
+ CellLabel->"In[52]:=",ExpressionUUID->"2a2fdedb-16a2-45a2-bdc9-8f514fa6bb74"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\\!\\(\\*SubscriptBox[\\(x\\), \\(i\\)]\\)\"\>", \
+"\<\"u(\\!\\(\\*SubscriptBox[\\(x\\), \\(i\\)]\\))\"\>", \
+"\<\"\\!\\(\\*SubscriptBox[\\(y\\), \\(i\\)]\\)\"\>", \
+"\<\"u(\\!\\(\\*SubscriptBox[\\(y\\), \\(i\\)]\\))\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.858935791244105*^9, 3.8589358161392846`*^9}},
+ CellLabel->"Out[52]=",ExpressionUUID->"6d511a01-a3cb-4db7-b9e8-d922a93d22c7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"InputField", "[", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", 
+         RowBox[{"Subscript", "[", 
+          RowBox[{"a", ",", "i", ",", "j"}], "]"}]}], ",", "Number", ",", 
+        RowBox[{"FieldSize", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"6", ",", "1.4"}], "}"}]}]}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "1", ",", "4"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"j", ",", "1", ",", "pts"}], "}"}]}], "]"}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.8589301643545237`*^9, {3.858930285674366*^9, 3.8589302864085655`*^9}, {
+   3.858934665032555*^9, 3.8589346755612497`*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"c23c0137-bfa7-405c-90a6-4ad292ab43e9"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     RowBox[{"{", 
+      RowBox[{
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}]}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}]}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}]}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}], ",", 
+       InputFieldBox[Dynamic[
+         Subscript[$CellContext`a, $CellContext`i, $CellContext`j]], Number,
+        FieldSize->{6, 1.4}]}], "}"}]}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.8589346787938604`*^9},
+ CellLabel->"Out[41]=",ExpressionUUID->"00df123a-a95d-4dc3-9a69-617a08994d42"]
+}, Open  ]],
+
+Cell[BoxData["TableForm"], "Input",
+ CellChangeTimes->{{3.8589331550885286`*^9, 
+  3.8589331588813076`*^9}},ExpressionUUID->"4a7ba059-55bb-49d6-8831-\
+a9ec1bbf7c93"],
+
+Cell[BoxData[
+ RowBox[{"<<", "Notation`"}]], "Input",
+ CellChangeTimes->{{3.8589374500152273`*^9, 3.8589374546079345`*^9}},
+ CellLabel->"In[94]:=",ExpressionUUID->"66978e28-78a2-471c-8576-84ead6b7954c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Symbolize", "[", 
+  SubscriptBox["b", "13"], "]"}]], "Input",
+ CellChangeTimes->{{3.8589368207270317`*^9, 3.858936828758257*^9}, {
+  3.85893707406522*^9, 3.8589370799232116`*^9}, {3.8589371166523294`*^9, 
+  3.85893712207286*^9}, {3.8589373296930923`*^9, 3.858937352056306*^9}, {
+  3.85893738694059*^9, 3.8589373879557457`*^9}, {3.8589374218622627`*^9, 
+  3.858937434999749*^9}},
+ CellLabel->"In[95]:=",ExpressionUUID->"8e5fda35-4da7-40d7-b804-8118963c42c7"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Symbolize","noboxtag",
+   "\"The Symbolize boxes \\!\\(\\*SubscriptBox[\\\"b\\\", \\\"13\\\"]\\) do \
+not have an embedded TemplateBox with tag NotationTemplateTag. The Symbolize \
+statement \\!\\(\\*RowBox[{\\\"Symbolize\\\", \\\"[\\\", SubscriptBox[\\\"b\\\
+\", \\\"13\\\"], \\\"]\\\"}]\\) may not have been entered using the palette, \
+or the embedded TemplateBox may have been deleted. The embedded TemplateBox \
+ensures correct parsing and retention of proper styling and grouping \
+information.\"",2,95,11,21545278231714878694,"Local","Notation`Symbolize"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{{3.858937344330223*^9, 3.8589373562270236`*^9}, 
+   3.8589373907519565`*^9, {3.8589374363900433`*^9, 3.8589374623292227`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[95]:=",ExpressionUUID->"6cbf0bce-3bce-470b-8178-0e070e925c29"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{
+  3.8589368297422132`*^9, 3.858937082969202*^9, 3.858937182789319*^9, {
+   3.858937344345873*^9, 3.8589373562426453`*^9}, 3.8589373907675776`*^9, {
+   3.8589374364056644`*^9, 3.858937462344843*^9}},
+ CellLabel->"Out[95]=",ExpressionUUID->"586ebc3b-17ea-4d1b-8ce5-70a11e13d3ba"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", 
+  SubscriptBox["b", "23"], "]"}]], "Input",
+ CellChangeTimes->{{3.8589370553023477`*^9, 3.858937063137525*^9}},
+ CellLabel->"In[84]:=",ExpressionUUID->"23211bb3-da61-47dc-b946-24d8acb6e462"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["b", "23"], "=", "5"}]], "Input",
+ CellChangeTimes->{{3.858936831679487*^9, 3.8589368493586655`*^9}},
+ CellLabel->"In[82]:=",ExpressionUUID->"8c2241bd-9aa2-44bc-a7d4-d258c405dc19"],
+
+Cell[BoxData["5"], "Output",
+ CellChangeTimes->{{3.8589368358970413`*^9, 3.858936850311368*^9}},
+ CellLabel->"Out[82]=",ExpressionUUID->"8800bef9-025f-4bed-9378-58beae8cfe9d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ SubscriptBox["b", "23"]], "Input",
+ CellChangeTimes->{{3.8589368528264275`*^9, 3.858936856028769*^9}},
+ CellLabel->"In[91]:=",ExpressionUUID->"8a5930e7-205d-4426-8fed-b009798aacab"],
+
+Cell[BoxData[
+ SubscriptBox["b", "23"]], "Output",
+ CellChangeTimes->{3.8589368566380005`*^9, 3.8589370681057014`*^9, 
+  3.858937187956214*^9, 3.8589373778926163`*^9},
+ CellLabel->"Out[91]=",ExpressionUUID->"1903eacc-1f6f-4440-b189-73c75627abad"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Symbolize", "[", 
+  TemplateBox[{SubscriptBox["b", "33"]},
+   "NotationTemplateTag"], "]"}]], "Input",
+ CellChangeTimes->{{3.8589375383587265`*^9, 3.8589375526470904`*^9}},
+ CellLabel->"In[97]:=",ExpressionUUID->"14e3b7d1-0ee9-4846-bb48-83cc8b04cf6a"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "how", " ", "to", " ", "create", " ", "a", " ", "new", " ", "window"}], 
+   ",", " ", 
+   RowBox[{
+   "draw", " ", "in", " ", "new", " ", "window", " ", "and", " ", 
+    "manipulate", " ", "in", " ", "new", " ", "window"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.85897327102674*^9, 3.8589732896129055`*^9}, {
+  3.858973817422248*^9, 
+  3.858973859438712*^9}},ExpressionUUID->"ba0caa8f-9b91-4a25-b589-\
+e5d951cb60f2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"nbout", "=", 
+   RowBox[{"CreateDocument", "[", 
+    RowBox[{
+     RowBox[{"{", "}"}], ",", 
+     RowBox[{"WindowFrame", "\[Rule]", "\"\<ThinFrame\>\""}], ",", 
+     RowBox[{"WindowElements", "\[Rule]", 
+      RowBox[{"{", "}"}]}], ",", 
+     RowBox[{"WindowToolbars", "\[Rule]", 
+      RowBox[{"{", "}"}]}], ",", 
+     RowBox[{"WindowSize", "\[Rule]", "Medium"}], ",", 
+     RowBox[{"WindowMargins", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"Automatic", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Automatic", ",", "0"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"Deployed", "\[Rule]", "True"}], ",", 
+     RowBox[{"ShowCellBracket", "\[Rule]", "False"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.8589738054818745`*^9, 3.858973805491872*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"a95cec74-4342-49d1-823a-2e5e463c49ee"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"nbout", "=", 
+    RowBox[{"CreateDocument", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"TextCell", "[", 
+         RowBox[{"\"\<Output\>\"", ",", "\"\<Section\>\""}], "]"}], ",", 
+        RowBox[{"Dynamic", "[", "outputCell", "]"}]}], "}"}], ",", 
+      RowBox[{"WindowFrame", "\[Rule]", "\"\<ThinFrame\>\""}], ",", 
+      RowBox[{"WindowElements", "\[Rule]", 
+       RowBox[{"{", "}"}]}], ",", 
+      RowBox[{"WindowToolbars", "\[Rule]", 
+       RowBox[{"{", "}"}]}], ",", 
+      RowBox[{"WindowSize", "\[Rule]", "Medium"}], ",", 
+      RowBox[{"WindowMargins", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"Automatic", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"Automatic", ",", "0"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"Deployed", "\[Rule]", "True"}], ",", 
+      RowBox[{"ShowCellBracket", "\[Rule]", "False"}]}], "]"}]}], 
+   ";"}]}]], "Input",
+ CellLabel->"In[12]:=",ExpressionUUID->"b5ef5de3-d9d4-4fd0-97f7-0ce211260cd4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CreateWindow", "[", 
+   RowBox[{"DialogNotebook", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"TextCell", "[", "\"\<Enter a name: \>\"", "]"}], ",", 
+      RowBox[{"InputField", "[", 
+       RowBox[{
+        RowBox[{"Dynamic", "[", "nm", "]"}], ",", "String"}], "]"}], ",", 
+      RowBox[{"DefaultButton", "[", 
+       RowBox[{"DialogReturn", "[", 
+        RowBox[{"ret", "=", "nm"}], "]"}], "]"}]}], "}"}], "]"}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.858974049647845*^9, 3.858974076959383*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"bcad337f-e582-4f6d-a9fc-e744b6d75531"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CreateWindow", "[", 
+  RowBox[{
+   RowBox[{"DialogNotebook", "@", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+           "\"\<\:5206\:6790\:66f2\:7ebf\:9636\:6570\:ff1a\>\"", ",", 
+            "\"\<\:6821\:51c6\:70b9\:6570\:76ee\:ff1a\>\""}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"PopupMenu", "[", 
+             RowBox[{
+              RowBox[{"Dynamic", "[", "polyorder", "]"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"1", ",", "2"}], "}"}], ",", 
+              RowBox[{"FieldSize", "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{"6", ",", "1"}], "}"}]}]}], "]"}], ",", 
+            RowBox[{"InputField", "[", 
+             RowBox[{
+              RowBox[{"Dynamic", "[", "pts", "]"}], ",", "Number", ",", 
+              RowBox[{"FieldSize", "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{"6", ",", "1.4"}], "}"}]}]}], "]"}]}], "}"}]}], "}"}],
+         ",", 
+        RowBox[{"Frame", "->", "All"}]}], "]"}], ",", 
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"{", 
+          RowBox[{"Grid", "[", 
+           RowBox[{
+            RowBox[{"Table", "[", 
+             RowBox[{
+              RowBox[{"InputField", "[", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", 
+                 RowBox[{"Evaluate", "@", 
+                  RowBox[{"Subscript", "[", 
+                   RowBox[{"a", ",", "i", ",", "j"}], "]"}]}], "]"}], ",", 
+                "Number", ",", 
+                RowBox[{"FieldSize", "\[Rule]", 
+                 RowBox[{"{", 
+                  RowBox[{"6", ",", "1.4"}], "}"}]}]}], "]"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"i", ",", "1", ",", "pts"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"j", ",", "1", ",", "4"}], "}"}]}], "]"}], ",", 
+            RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}], "}"}], "}"}], ",", 
+        RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]}], "}"}]}], ",", 
+   RowBox[{"WindowSize", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Scaled", "[", 
+       RowBox[{"2", "/", "3"}], "]"}], ",", 
+      RowBox[{"Scaled", "[", 
+       RowBox[{"3", "/", "5"}], "]"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8589741345701237`*^9, 3.8589741586548986`*^9}, {
+  3.8589840591773405`*^9, 3.858984132708665*^9}, {3.8589849216479445`*^9, 
+  3.858984928288599*^9}, {3.8589849917122226`*^9, 3.8589850220019846`*^9}, {
+  3.8589850921745462`*^9, 3.8589851011449924`*^9}, {3.8589851343966274`*^9, 
+  3.858985148735841*^9}, {3.858985202540185*^9, 3.8589852036511545`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"d1e3f1ae-cbfd-412c-802c-cc4c25b8ab65"],
+
+Cell[BoxData[
+ TemplateBox[{FrontEndObject[
+    LinkObject["5bndm_shm", 3, 1]],52,
+   "FrontEndObject[LinkObject[\"5bndm_shm\", 3, 1]]","52","52"},
+  "NotebookObjectUnsaved"]], "Output",
+ CellChangeTimes->{{3.8589741436294994`*^9, 3.8589741607818885`*^9}, 
+   3.8589768274134073`*^9, 3.858982991008548*^9, 3.8589840689156165`*^9, {
+   3.8589841121385965`*^9, 3.8589841343898525`*^9}, 3.858985110893075*^9, 
+   3.8589852080503397`*^9},
+ CellLabel->"Out[35]=",ExpressionUUID->"e6cdec69-177a-4fe1-b689-f8b6c23ab27d"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"pattern", " ", "matching"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Grid\:5d4c\:5957\:8fdb\:53bb", "\:ff0c", 
+    "\:4ece\:5b58\:50a8\:7a7a\:95f4\:4e2d\:8c03\:51fa\:4e0a\:4e00\:6b21\:8bfb\
+\:51fa\:7684\:6570\:636e", "\:ff0c", 
+    "\:7136\:540e\:52fe\:9009\:54ea\:4e9b\:6570\:636e\:8981", "\:ff0c", 
+    "\:54ea\:4e9b\:6570\:636e\:4e0d\:8981"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+  "(*", "\:52a8\:6001\:6267\:884c\:4e0b\:4e00\:6b65", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.858973308015976*^9, 3.858973334400363*^9}, {
+  3.858974232581459*^9, 3.858974242000123*^9}, {3.858985375282049*^9, 
+  3.85898541788365*^9}, {3.8589855410599575`*^9, 
+  3.8589855693394885`*^9}},ExpressionUUID->"a08236c0-58f4-4a26-9d02-\
+23a65b8e6a92"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.858973914358678*^9, 3.858973914972761*^9}, 
+   3.858973961374174*^9},ExpressionUUID->"81013f9e-f47c-4c9f-ab1a-\
+c0612ce0f65c"]
+},
+WindowSize->{635, 717},
+WindowMargins->{{182, Automatic}, {-7, Automatic}},
+Magnification:>1.1 Inherited,
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (May 18, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 322, 8, 32, "Input",ExpressionUUID->"dd4eae97-bf86-4fd4-a6d2-9da8c97eb29f"],
+Cell[883, 30, 310, 7, 55, "Input",ExpressionUUID->"679f3648-138a-452a-96f4-05621b44cbb4"],
+Cell[CellGroupData[{
+Cell[1218, 41, 249, 4, 32, "Input",ExpressionUUID->"af913f10-b84d-4ca8-8b29-6c1c08030aea"],
+Cell[1470, 47, 158, 2, 36, "Output",ExpressionUUID->"402d0514-714e-4108-8438-8e84e891da4e"]
+}, Open  ]],
+Cell[1643, 52, 220, 4, 32, "Input",ExpressionUUID->"d8df4edc-a39e-4565-834c-98e4bab58332"],
+Cell[1866, 58, 285, 7, 32, "Input",ExpressionUUID->"ab80d8a7-4e01-464a-8c2d-f735bcbd9b23"],
+Cell[CellGroupData[{
+Cell[2176, 69, 1504, 33, 99, "Input",ExpressionUUID->"ac225170-382c-480d-a647-5bcc3cc7977b"],
+Cell[3683, 104, 635, 15, 87, "Output",ExpressionUUID->"4e3f2547-ec14-412a-8c28-6678fce48928"]
+}, Open  ]],
+Cell[4333, 122, 431, 9, 55, "Input",ExpressionUUID->"9a684249-4eeb-4c6f-b642-102a12a7d69d"],
+Cell[4767, 133, 1302, 35, 103, "Input",ExpressionUUID->"f0d1fcb1-7a34-4fde-b400-1c70f1d27903"],
+Cell[CellGroupData[{
+Cell[6094, 172, 2154, 44, 99, "Input",ExpressionUUID->"1a4b0feb-2f64-4dee-b08c-81a39b7eb46b"],
+Cell[8251, 218, 4983, 127, 413, "Output",ExpressionUUID->"df119a4b-3bc8-4fb2-8fb4-e9e267cd79a8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13271, 350, 1834, 43, 143, "Input",ExpressionUUID->"2310f1c6-5dcd-4e9b-98b1-85db50202a61"],
+Cell[15108, 395, 6343, 163, 433, "Output",ExpressionUUID->"c859821b-222f-4d2a-aea9-bafc80c67d2b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21488, 563, 198, 3, 32, "Input",ExpressionUUID->"762e8f6b-ccd2-43c7-9cd1-1f15eb78af3e"],
+Cell[21689, 568, 247, 4, 36, "Output",ExpressionUUID->"0f3c1977-b9a4-4ea4-800c-6ce0da3e8f39"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21973, 577, 555, 12, 32, "Input",ExpressionUUID->"2a2fdedb-16a2-45a2-bdc9-8f514fa6bb74"],
+Cell[22531, 591, 599, 12, 43, "Output",ExpressionUUID->"6d511a01-a3cb-4db7-b9e8-d922a93d22c7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23167, 608, 877, 22, 99, "Input",ExpressionUUID->"c23c0137-bfa7-405c-90a6-4ad292ab43e9"],
+Cell[24047, 632, 5075, 113, 325, "Output",ExpressionUUID->"00df123a-a95d-4dc3-9a69-617a08994d42"]
+}, Open  ]],
+Cell[29137, 748, 165, 3, 32, "Input",ExpressionUUID->"4a7ba059-55bb-49d6-8831-a9ec1bbf7c93"],
+Cell[29305, 753, 202, 3, 32, "Input",ExpressionUUID->"66978e28-78a2-471c-8576-84ead6b7954c"],
+Cell[CellGroupData[{
+Cell[29532, 760, 481, 8, 32, "Input",ExpressionUUID->"8e5fda35-4da7-40d7-b804-8118963c42c7"],
+Cell[30016, 770, 888, 15, 114, "Message",ExpressionUUID->"6cbf0bce-3bce-470b-8178-0e070e925c29"],
+Cell[30907, 787, 332, 5, 36, "Output",ExpressionUUID->"586ebc3b-17ea-4d1b-8ce5-70a11e13d3ba"]
+}, Open  ]],
+Cell[31254, 795, 228, 4, 32, "Input",ExpressionUUID->"23211bb3-da61-47dc-b946-24d8acb6e462"],
+Cell[CellGroupData[{
+Cell[31507, 803, 219, 4, 32, "Input",ExpressionUUID->"8c2241bd-9aa2-44bc-a7d4-d258c405dc19"],
+Cell[31729, 809, 175, 2, 36, "Output",ExpressionUUID->"8800bef9-025f-4bed-9378-58beae8cfe9d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31941, 816, 196, 3, 32, "Input",ExpressionUUID->"8a5930e7-205d-4426-8fed-b009798aacab"],
+Cell[32140, 821, 246, 4, 36, "Output",ExpressionUUID->"1903eacc-1f6f-4440-b189-73c75627abad"]
+}, Open  ]],
+Cell[32401, 828, 275, 5, 44, "Input",ExpressionUUID->"14e3b7d1-0ee9-4846-bb48-83cc8b04cf6a"],
+Cell[32679, 835, 475, 12, 55, "Input",ExpressionUUID->"ba0caa8f-9b91-4a25-b589-e5d951cb60f2"],
+Cell[33157, 849, 932, 23, 99, "Input",ExpressionUUID->"a95cec74-4342-49d1-823a-2e5e463c49ee"],
+Cell[34092, 874, 1123, 27, 165, "Input",ExpressionUUID->"b5ef5de3-d9d4-4fd0-97f7-0ce211260cd4"],
+Cell[35218, 903, 629, 15, 99, "Input",ExpressionUUID->"bcad337f-e582-4f6d-a9fc-e744b6d75531"],
+Cell[CellGroupData[{
+Cell[35872, 922, 2835, 68, 275, "Input",ExpressionUUID->"d1e3f1ae-cbfd-412c-802c-cc4c25b8ab65"],
+Cell[38710, 992, 513, 9, 56, "Output",ExpressionUUID->"e6cdec69-177a-4fe1-b689-f8b6c23ab27d"]
+}, Open  ]],
+Cell[39238, 1004, 814, 17, 99, "Input",ExpressionUUID->"a08236c0-58f4-4a26-9d02-23a65b8e6a92"],
+Cell[40055, 1023, 175, 3, 32, "Input",ExpressionUUID->"81013f9e-f47c-4c9f-ab1a-c0612ce0f65c"]
+}
+]
+*)
+
