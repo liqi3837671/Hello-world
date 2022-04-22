@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     48629,       1208]
-NotebookOptionsPosition[     44143,       1132]
-NotebookOutlinePosition[     44515,       1148]
-CellTagsIndexPosition[     44472,       1145]
+NotebookDataLength[     49624,       1234]
+NotebookOptionsPosition[     44911,       1154]
+NotebookOutlinePosition[     45283,       1170]
+CellTagsIndexPosition[     45240,       1167]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1021,6 +1021,8 @@ Cell[BoxData[
   3.8589855693394885`*^9}},ExpressionUUID->"a08236c0-58f4-4a26-9d02-\
 23a65b8e6a92"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"CreateWindow", "[", 
   RowBox[{
@@ -1106,9 +1108,29 @@ Cell[BoxData[
    RowBox[{"WindowElements", "->", 
     RowBox[{"{", "\"\<VerticalScrollBar\>\"", "}"}]}]}], 
   "\[IndentingNewLine]", "]"}]], "Input",
- CellChangeTimes->{{3.8593480218050537`*^9, 
-  3.859348022094898*^9}},ExpressionUUID->"7682868a-4f5b-46f7-b623-\
-7d25ddbf7ba2"],
+ CellChangeTimes->{{3.8593480218050537`*^9, 3.859348022094898*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"7682868a-4f5b-46f7-b623-7d25ddbf7ba2"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set","write",
+   "\"Tag \\!\\(\\*RowBox[{\\\"Times\\\"}]\\) in \\!\\(\\*RowBox[{\\\"G\\\", \
+\\\" \\\", \\\"x\\\"}]\\) is Protected.\"",2,49,21,22784454586238610751,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8594544271310215`*^9},
+ CellLabel->
+  "During evaluation of \
+In[49]:=",ExpressionUUID->"b0c901b9-e6d9-4532-8064-2b732c7796ca"],
+
+Cell[BoxData[
+ TemplateBox[{FrontEndObject[
+    LinkObject["pw8s6_shm", 3, 1]],68,
+   "FrontEndObject[LinkObject[\"pw8s6_shm\", 3, 1]]","68","68"},
+  "NotebookObjectUnsaved"]], "Output",
+ CellChangeTimes->{3.8594544278683157`*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"fd72a3f1-0e11-4d72-b367-90d2e675dbf3"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
@@ -1131,7 +1153,7 @@ Cell[BoxData[""], "Input",
 c0612ce0f65c"]
 },
 WindowSize->{635, 717},
-WindowMargins->{{182, Automatic}, {-7, Automatic}},
+WindowMargins->{{43, Automatic}, {-19, Automatic}},
 Magnification:>1.1 Inherited,
 FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (May 18, 2019)",
 StyleDefinitions->"Default.nb"
@@ -1207,9 +1229,13 @@ Cell[35872, 922, 2835, 68, 275, "Input",ExpressionUUID->"d1e3f1ae-cbfd-412c-802c
 Cell[38710, 992, 513, 9, 56, "Output",ExpressionUUID->"e6cdec69-177a-4fe1-b689-f8b6c23ab27d"]
 }, Open  ]],
 Cell[39238, 1004, 814, 17, 99, "Input",ExpressionUUID->"a08236c0-58f4-4a26-9d02-23a65b8e6a92"],
-Cell[40055, 1023, 3383, 87, 479, "Input",ExpressionUUID->"7682868a-4f5b-46f7-b623-7d25ddbf7ba2"],
-Cell[43441, 1112, 520, 13, 77, "Input",ExpressionUUID->"8014a5bf-8bcd-4099-92a8-9a67416de781"],
-Cell[43964, 1127, 175, 3, 32, "Input",ExpressionUUID->"81013f9e-f47c-4c9f-ab1a-c0612ce0f65c"]
+Cell[CellGroupData[{
+Cell[40077, 1025, 3402, 86, 479, "Input",ExpressionUUID->"7682868a-4f5b-46f7-b623-7d25ddbf7ba2"],
+Cell[43482, 1113, 400, 10, 25, "Message",ExpressionUUID->"b0c901b9-e6d9-4532-8064-2b732c7796ca"],
+Cell[43885, 1125, 309, 6, 88, "Output",ExpressionUUID->"fd72a3f1-0e11-4d72-b367-90d2e675dbf3"]
+}, Open  ]],
+Cell[44209, 1134, 520, 13, 77, "Input",ExpressionUUID->"8014a5bf-8bcd-4099-92a8-9a67416de781"],
+Cell[44732, 1149, 175, 3, 32, "Input",ExpressionUUID->"81013f9e-f47c-4c9f-ab1a-c0612ce0f65c"]
 }
 ]
 *)
